@@ -501,8 +501,8 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
 
 // 1. Langsung gabungin fungsi yang udah lo punya
 const helmetTitle = mediaType === "movie" 
-  ? `Watch ${getMediaTitle()} (${getMediaReleaseYear()}) Online Free - MovieGO`
-  : `Watch ${getMediaTitle()} (TV Series) Online Free - MovieGO`;
+  ? `Watch ${getMediaTitle()} (${getMediaReleaseYear()}) Online in HD - MovieGO`
+  : `Watch ${getMediaTitle()} (TV Series) Full Episodes - MovieGO`;
 
 // 2. Khusus yang dipotong buat Google (biar gak berantakan di search)
 const truncatedDesc = (media.overview || "").length > 155 
