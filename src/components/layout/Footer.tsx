@@ -16,30 +16,30 @@ const Footer: React.FC = () => {
             >
               <Cigarette className="h-6 w-6 text-primary" />
               <span className="font-bold text-xl bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                Alien
+                About
               </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Discover and stream your favorite movies and TV shows in one
-              place. Your ultimate entertainment destination.
+              MovieGO is a free movie streaming site that allows users to watch movies and TV series online in HD without a subscription. 
+			  We offer a vast collection of movies and trending TV shows with multi-language subtitles, no registration required.
             </p>
             <div className="flex space-x-4">
               <a
-                href="mailto:redjohn9818@proton.me"
+                href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Mail"
               >
                 <FaEnvelope className="h-5 w-5" />
               </a>
               <a
-                href="https://discord.com/users/clueless1006"
+                href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Discord"
               >
                 <FaDiscord className="h-5 w-5" />
               </a>
               <a
-                href="https://www.instagram.com/ryangoslingoffical__"
+                href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
@@ -137,19 +137,10 @@ const Footer: React.FC = () => {
 
         <div className="text-center space-y-4">
           <p className="text-sm text-muted-foreground">
-            Data provided by{" "}
-            <a
-              href="https://www.themoviedb.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              TMDb
-            </a>
-            . Alien does not store any media files on its servers.
+          MovieGO does not store any media files on its servers. All media is provided by third-party services.
           </p>
           <p className="text-sm text-muted-foreground">
-            {new Date().getFullYear()} Alien. All rights not reserved lol.
+            {new Date().getFullYear()} MovieGO. All rights not reserved lol.
           </p>
         </div>
       </div>

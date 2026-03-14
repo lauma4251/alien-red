@@ -77,7 +77,7 @@ const Header: React.FC = () => {
         >
           <Cigarette className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
           <span className="font-oswald font-bold text-lg sm:text-xl bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-            Alien
+            MovieGO
           </span>
         </Link>
 
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
                     <Link to="/" className="flex items-center space-x-1">
                       <Cigarette className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                       <span className="font-oswald font-bold text-lg sm:text-xl bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                        Alien
+                        MovieGO
                       </span>
                     </Link>
                   </SheetClose>
