@@ -36,6 +36,7 @@ const HomePage: React.FC = () => {
   const { session, loading: authLoading } = useAuth();
   const { toast } = useToast();
 
+/**
   useEffect(() => {
     if (authLoading) return;
 
@@ -62,6 +63,7 @@ const HomePage: React.FC = () => {
 
     return () => clearTimeout(timer);
   }, [toast]);
+**/
   const [continueWatchingItems, setContinueWatchingItems] = useState<
     (Movie | TVShow)[]
   >([]);
