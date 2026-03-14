@@ -563,6 +563,8 @@ const schemaData = {
 };
 
   return (
+     <div className="pb-12">
+	  
 	<Helmet>
         <link rel="canonical" href={`https://moviego.me${location.pathname}`} />
         <title>{helmetTitle}</title>
@@ -582,7 +584,7 @@ const schemaData = {
     {JSON.stringify(schemaData)}
 </script>
       </Helmet>
-    <div className="pb-12">
+
       {/* Video Player (when watching) */}
       {isWatching && (
         <div className="container px-4 sm:px-6 md:px-8 pt-20 mb-8">
