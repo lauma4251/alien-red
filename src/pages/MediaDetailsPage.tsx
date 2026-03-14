@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import React, { useEffect, useState } from "react";
 import {
   useParams,
@@ -498,7 +499,89 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
     );
   }
 
+// 1. Langsung gabungin fungsi yang udah lo punya
+const helmetTitle = mediaType === "movie" 
+  ? `Watch ${getMediaTitle()} (${getMediaReleaseYear()}) Online Free - MovieGO`
+  : `Watch ${getMediaTitle()} (TV Series) Online Free - MovieGO`;
+
+// 2. Khusus yang dipotong buat Google (biar gak berantakan di search)
+const truncatedDesc = (media.overview || "").length > 155 
+  ? (media.overview || "").substring(0, (media.overview || "").lastIndexOf(' ', 155)) + "..."
+  : (media.overview || "");
+  
+// 2. Olah Data Orang & Trailer
+const director = media.credits?.crew?.find((p: any) => p.job === "Director")?.name;
+const creators = media.created_by?.map((c: any) => ({ "@type": "Person", "name": c.name }));
+const topCast = media.credits?.cast?.slice(0, 5).map((p: any) => ({ "@type": "Person", "name": p.name }));
+const trailer = media.videos?.results?.find((v: any) => v.type === "Trailer" && v.site === "YouTube");
+
+// 3. Rakit Schema Hybrid (GAS!)
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": mediaType === "movie" ? "Movie" : "TVSeries",
+  "url": `https://moviego.me${location.pathname}`,
+  "name": mediaType === "movie" ? media.title : media.name,
+  "description": media.overview,
+  "image": getBackdropUrl(media.backdrop_path, "w780"),
+  "datePublished": mediaType === "movie" ? media.release_date : media.first_air_date,
+  "genre": media.genres?.map((g: any) => g.name) || [],
+  
+  // Khusus Movie
+  ...(mediaType === "movie" && {
+    "duration": `PT${Math.floor((media.runtime || 0) / 60)}H${(media.runtime || 0) % 60}M`,
+    "director": { "@type": "Person", "name": director || "Unknown Director" }
+  }),
+
+  // Khusus TV Series
+  ...(mediaType === "tv" && {
+    "numberOfSeasons": media.number_of_seasons,
+    "numberOfEpisodes": media.number_of_episodes,
+    "author": creators 
+  }),
+
+  "actor": topCast,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": media.vote_average || 8.0,
+    "bestRating": "10",
+    "worstRating": "1",
+    "ratingCount": media.vote_count || 13
+  },
+
+  // Video Trailer Murni
+  ...(trailer && {
+    "video": {
+      "@type": "VideoObject",
+      "name": mediaType === "movie" ? media.title : media.name,
+      "description": media.overview,
+      "thumbnailUrl": getBackdropUrl(media.backdrop_path, "w780"),
+      "uploadDate": (mediaType === "movie" ? media.release_date : media.first_air_date) + "T00:00:00Z",
+      "contentUrl": `https://www.youtube.com/watch?v=${trailer.key}`,
+      "embedUrl": `https://www.youtube.com/embed/${trailer.key}`
+    }
+  })
+};
+
   return (
+	<Helmet>
+        <title>{helmetTitle}</title>
+        <meta name="description" content={truncatedDesc} />
+        <link rel="canonical" href={`https://moviego.me${location.pathname}`} />
+
+        <meta property="og:title" content={helmetTitle} />
+        <meta property="og:description" content={media.overview} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://moviego.me${location.pathname}`} />
+        <meta property="og:image" content={getBackdropUrl(media.backdrop_path, "w780") as string} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={helmetTitle} />
+        <meta name="twitter:description" content={media.overview} />
+        <meta name="twitter:image" content={getBackdropUrl(media.backdrop_path, "w780") as string} />
+<script type="application/ld+json">
+    {JSON.stringify(schemaData)}
+</script>
+      </Helmet>
     <div className="pb-12">
       {/* Video Player (when watching) */}
       {isWatching && (
