@@ -45,7 +45,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       .join(" • ") || "";
 
   // Get backdrop URL
-  const backdropUrl = getBackdropUrl(item.backdrop_path, "w1280");
+  const backdropUrl = getBackdropUrl(item.backdrop_path, "original");
 
   const handlePlayClick = () => {
     navigate(`/${mediaType}/${item.id}`);
