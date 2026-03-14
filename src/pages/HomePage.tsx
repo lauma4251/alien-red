@@ -334,26 +334,28 @@ const HomePage: React.FC = () => {
     return (
       <>
         <Helmet>
-          <title>Alien - Watch Movies & TV Shows Online</title>
+		  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+		  <link rel="canonical" href="https://moviego.ws/" />
+          <title>MovieGO - Watch Free Movies & TV Shows Online </title>
           <meta
             name="description"
-            content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
+            content="Watch free movies and TV shows online in HD quality. No registration or subscription required. Stream your favorite content for free on MovieGO."
           />
           <meta
             property="og:title"
-            content="Alien - Watch Movies & TV Shows Online"
+            content="MovieGO - Watch Movies & TV Shows Online"
           />
           <meta
             property="og:description"
             content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://alienred.ddnsfree.com/" />
+          <meta property="og:url" content="https://moviego.ws/" />
           <meta property="og:image" content="/favicon.svg" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:title"
-            content="Alien - Watch Movies & TV Shows Online"
+            content="MovieGO - Watch Movies & TV Shows Online"
           />
           <meta
             name="twitter:description"
@@ -381,26 +383,26 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Alien - Watch Movies & TV Shows Online</title>
+        <title>MovieGO - Watch Free Movies & TV Shows Online</title>
         <meta
           name="description"
-          content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
+          content="Watch free movies and TV shows online in HD quality. No registration or subscription required. Stream your favorite content for free on MovieGO."
         />
         <meta
           property="og:title"
-          content="Alien - Watch Movies & TV Shows Online"
+          content="MovieGO - Watch Movies & TV Shows Online"
         />
         <meta
           property="og:description"
           content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alienred.ddnsfree.com/" />
+        <meta property="og:url" content="https://moviego.ws/" />
         <meta property="og:image" content="/favicon.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Alien - Watch Movies & TV Shows Online"
+          content="MovieGO - Watch Movies & TV Shows Online"
         />
         <meta
           name="twitter:description"
