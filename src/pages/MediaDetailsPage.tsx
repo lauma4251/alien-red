@@ -564,9 +564,9 @@ const schemaData = {
 
   return (
 	<Helmet>
+        <link rel="canonical" href={`https://moviego.me${location.pathname}`} />
         <title>{helmetTitle}</title>
         <meta name="description" content={truncatedDesc} />
-        <link rel="canonical" href={`https://moviego.me${location.pathname}`} />
 
         <meta property="og:title" content={helmetTitle} />
         <meta property="og:description" content={media.overview} />
