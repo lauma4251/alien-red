@@ -9,7 +9,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>404 Not Found - Alien Streaming</title>
+        <title>404 Not Found - MovieGO</title>
         <meta name="description" content="The page you are looking for does not exist." />
       </Helmet>
       <div className="min-h-screen flex flex-col items-center justify-center p-4">

@@ -177,17 +177,17 @@ const GenresPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Genres - Alien Streaming</title>
-        <meta name="description" content="Browse movies and TV shows by genre. Find your favorite genres and discover new content on Alien." />
-        <meta property="og:title" content="Genres - Alien Streaming" />
-        <meta property="og:description" content="Browse movies and TV shows by genre. Find your favorite genres and discover new content on Alien." />
+        <title>Genres - MovieGO</title>
+        <meta name="description" content="Browse movies and TV shows by genre. Find your favorite genres and discover new content on MovieGO." />
+        <meta property="og:title" content="Genres - MovieGO" />
+        <meta property="og:description" content="Browse movies and TV shows by genre. Find your favorite genres and discover new content on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alienred.ddnsfree.com/genres" />
-        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:url" content="https://moviego.ws/genres" />
+        <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Genres - Alien Streaming" />
-        <meta name="twitter:description" content="Browse movies and TV shows by genre. Find your favorite genres and discover new content on Alien." />
-        <meta name="twitter:image" content="/favicon.svg" />
+        <meta name="twitter:title" content="Genres - MovieGO" />
+        <meta name="twitter:description" content="Browse movies and TV shows by genre. Find your favorite genres and discover new content on MovieGO." />
+        <meta name="twitter:image" content="/backdrop.png" />
       </Helmet>
       <div className="min-h-screen">
         <div className="px-4 sm:px-6 md:px-8 pt-24 pb-12">

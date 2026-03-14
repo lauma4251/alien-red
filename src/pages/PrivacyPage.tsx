@@ -10,17 +10,17 @@ const PrivacyPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - Alien Red</title>
-        <meta name="description" content="Read the privacy policy for Alien. Learn how your data is handled and protected." />
-        <meta property="og:title" content="Privacy Policy - Alien Streaming" />
-        <meta property="og:description" content="Read the privacy policy for Alien. Learn how your data is handled and protected." />
+        <title>Privacy Policy - MovieGO</title>
+        <meta name="description" content="Read the privacy policy for MovieGO. Learn how your data is handled and protected." />
+        <meta property="og:title" content="Privacy Policy - MovieGO" />
+        <meta property="og:description" content="Read the privacy policy for MovieGO. Learn how your data is handled and protected." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alienred.ddnsfree.com/privacy" />
-        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:url" content="https://moviego.ws/privacy" />
+        <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Privacy Policy - Alien Streaming" />
-        <meta name="twitter:description" content="Read the privacy policy for Alien. Learn how your data is handled and protected." />
-        <meta name="twitter:image" content="/favicon.svg" />
+        <meta name="twitter:title" content="Privacy Policy - MovieGO" />
+        <meta name="twitter:description" content="Read the privacy policy for MovieGO. Learn how your data is handled and protected." />
+        <meta name="twitter:image" content="/backdrop.png" />
       </Helmet>
       <div className="container px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
         <Button variant="ghost" className="mb-8" onClick={() => navigate(-1)}>
@@ -37,7 +37,7 @@ const PrivacyPage: React.FC = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
               <p>
-                Welcome to Alien Red. We are committed to protecting your
+                Welcome to MovieGO. We are committed to protecting your
                 privacy. This Privacy Policy explains how we collect, use, and
                 safeguard your information when you use our website.
               </p>

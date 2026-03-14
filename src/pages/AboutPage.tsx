@@ -11,26 +11,26 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About Alien - Streaming Platform</title>
+        <title>About MovieGO - Streaming Platform</title>
         <meta
           name="description"
-          content="Learn more about Alien, our mission, data sources, and commitment to providing a modern streaming experience."
+          content="Learn more about MovieGO, our mission, data sources, and commitment to providing a modern streaming experience."
         />
-        <meta property="og:title" content="About Alien - Streaming Platform" />
+        <meta property="og:title" content="About MovieGO - Streaming Platform" />
         <meta
           property="og:description"
-          content="Learn more about Alien, our mission, data sources, and commitment to providing a modern streaming experience."
+          content="Learn more about MovieGO, our mission, data sources, and commitment to providing a modern streaming experience."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alienred.ddnsfree.com/about" />
-        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:url" content="https://moviego.ws/about" />
+        <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Alien - Streaming Platform" />
+        <meta name="twitter:title" content="About MovieGO - Streaming Platform" />
         <meta
           name="twitter:description"
-          content="Learn more about Alien, our mission, data sources, and commitment to providing a modern streaming experience."
+          content="Learn more about MovieGO, our mission, data sources, and commitment to providing a modern streaming experience."
         />
-        <meta name="twitter:image" content="/favicon.svg" />
+        <meta name="twitter:image" content="/backdrop.png" />
       </Helmet>
       <div className="container px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
         <Button variant="ghost" className="mb-8" onClick={() => navigate(-1)}>
@@ -65,8 +65,8 @@ const AboutPage: React.FC = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4">What Alien Does</h2>
-              <p>Alien is a modern streaming platform that offers:</p>
+              <h2 className="text-2xl font-semibold mb-4">What MovieGO Does</h2>
+              <p>MovieGO is a modern streaming platform that offers:</p>
               <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li>Extensive collection of movies and TV shows</li>
                 <li>Personalized recommendations</li>

@@ -19,17 +19,17 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact - Alien Streaming</title>
-        <meta name="description" content="Contact the Alien team for questions, suggestions, or feedback. Get in touch with us here." />
-        <meta property="og:title" content="Contact - Alien Streaming" />
-        <meta property="og:description" content="Contact the Alien team for questions, suggestions, or feedback. Get in touch with us here." />
+        <title>Contact - MovieGO</title>
+        <meta name="description" content="Contact the MovieGO team for questions, suggestions, or feedback. Get in touch with us here." />
+        <meta property="og:title" content="Contact - MovieGO" />
+        <meta property="og:description" content="Contact the MovieGO team for questions, suggestions, or feedback. Get in touch with us here." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alienred.ddnsfree.com/contact" />
-        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:url" content="https://moviego.ws/contact" />
+        <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact - Alien Streaming" />
-        <meta name="twitter:description" content="Contact the Alien team for questions, suggestions, or feedback. Get in touch with us here." />
-        <meta name="twitter:image" content="/favicon.svg" />
+        <meta name="twitter:title" content="Contact - MovieGO" />
+        <meta name="twitter:description" content="Contact the MovieGO team for questions, suggestions, or feedback. Get in touch with us here." />
+        <meta name="twitter:image" content="/backdrop.png" />
       </Helmet>
       <div className="container px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
         <Button variant="ghost" className="mb-8" onClick={() => navigate(-1)}>

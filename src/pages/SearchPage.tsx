@@ -72,17 +72,17 @@ const SearchPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Search - Alien Streaming</title>
-        <meta name="description" content="Search for movies, TV shows, and people. Find your favorite content quickly on Alien." />
-        <meta property="og:title" content="Search - Alien Streaming" />
-        <meta property="og:description" content="Search for movies, TV shows, and people. Find your favorite content quickly on Alien." />
+        <title>Search - MovieGO</title>
+        <meta name="description" content="Search for movies, TV shows, and people. Find your favorite content quickly on MovieGO." />
+        <meta property="og:title" content="Search - MovieGO" />
+        <meta property="og:description" content="Search for movies, TV shows, and people. Find your favorite content quickly on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alienred.ddnsfree.com/search" />
-        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:url" content="https://moviego.ws/search" />
+        <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Search - Alien Streaming" />
-        <meta name="twitter:description" content="Search for movies, TV shows, and people. Find your favorite content quickly on Alien." />
-        <meta name="twitter:image" content="/favicon.svg" />
+        <meta name="twitter:title" content="Search - MovieGO" />
+        <meta name="twitter:description" content="Search for movies, TV shows, and people. Find your favorite content quickly on MovieGO." />
+        <meta name="twitter:image" content="/backdrop.png" />
       </Helmet>
       <div className="min-h-screen">
         <div className="px-4 sm:px-6 md:px-8 pt-24 pb-12">
