@@ -383,6 +383,8 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
+	  	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+		<link rel="canonical" href="https://moviego.ws/" />
         <title>MovieGO - Watch Free Movies & TV Shows Online</title>
         <meta
           name="description"
