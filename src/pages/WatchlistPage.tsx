@@ -87,17 +87,17 @@ const WatchlistPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>My Watchlist - Alien Streaming</title>
-        <meta name="description" content="View and manage your personal watchlist. Keep track of movies and TV shows you want to watch on Alien." />
-        <meta property="og:title" content="My Watchlist - Alien Streaming" />
-        <meta property="og:description" content="View and manage your personal watchlist. Keep track of movies and TV shows you want to watch on Alien." />
+        <title>My Watchlist - MovieGO</title>
+        <meta name="description" content="View and manage your personal watchlist. Keep track of movies and TV shows you want to watch on MovieGO." />
+        <meta property="og:title" content="My Watchlist - MovieGO" />
+        <meta property="og:description" content="View and manage your personal watchlist. Keep track of movies and TV shows you want to watch on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alienred.ddnsfree.com/watchlist" />
-        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:url" content="https://moviego.ws/watchlist" />
+        <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="My Watchlist - Alien Streaming" />
-        <meta name="twitter:description" content="View and manage your personal watchlist. Keep track of movies and TV shows you want to watch on Alien." />
-        <meta name="twitter:image" content="/favicon.svg" />
+        <meta name="twitter:title" content="My Watchlist - MovieGO" />
+        <meta name="twitter:description" content="View and manage your personal watchlist. Keep track of movies and TV shows you want to watch on MovieGO." />
+        <meta name="twitter:image" content="/backdrop.png" />
       </Helmet>
       <div className="container pt-24 pb-12">
         <h1 className="text-3xl font-bold mb-8">My Lists</h1>
