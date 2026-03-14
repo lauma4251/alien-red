@@ -351,7 +351,7 @@ const HomePage: React.FC = () => {
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://moviego.ws/" />
-          <meta property="og:image" content="/favicon.svg" />
+          <meta property="og:image" content="/backdrop.png" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:title"
@@ -361,7 +361,7 @@ const HomePage: React.FC = () => {
             name="twitter:description"
             content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
           />
-          <meta name="twitter:image" content="/favicon.svg" />
+          <meta name="twitter:image" content="/backdrop.png" />
         </Helmet>
         <div className="min-h-screen bg-background">
           <div className="space-y-8 px-4 sm:px-6 md:px-8 py-6 sm:py-8">
@@ -400,7 +400,7 @@ const HomePage: React.FC = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://moviego.ws/" />
-        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -410,7 +410,7 @@ const HomePage: React.FC = () => {
           name="twitter:description"
           content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
         />
-        <meta name="twitter:image" content="/favicon.svg" />
+        <meta name="twitter:image" content="/backdrop.png" />
       </Helmet>
       <div className="min-h-screen">
         {isLoading ? (

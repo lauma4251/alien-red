@@ -83,17 +83,17 @@ const TVShowsPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>TV Shows - Alien Streaming</title>
-        <meta name="description" content="Browse popular, trending, and top-rated TV shows. Discover new series and manage your watchlist on Alien." />
-        <meta property="og:title" content="TV Shows - Alien Streaming" />
-        <meta property="og:description" content="Browse popular, trending, and top-rated TV shows. Discover new series and manage your watchlist on Alien." />
+        <title>TV Shows - MovieGO</title>
+        <meta name="description" content="Browse popular, trending, and top-rated TV shows. Discover new series and manage your watchlist on MovieGO." />
+        <meta property="og:title" content="TV Shows - MovieGO" />
+        <meta property="og:description" content="Browse popular, trending, and top-rated TV shows. Discover new series and manage your watchlist on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alienred.ddnsfree.com/tv" />
-        <meta property="og:image" content="/favicon.svg" />
+        <meta property="og:url" content="https://moviego.ws/tv" />
+        <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="TV Shows - Alien Streaming" />
-        <meta name="twitter:description" content="Browse popular, trending, and top-rated TV shows. Discover new series and manage your watchlist on Alien." />
-        <meta name="twitter:image" content="/favicon.svg" />
+        <meta name="twitter:title" content="TV Shows - MovieGO" />
+        <meta name="twitter:description" content="Browse popular, trending, and top-rated TV shows. Discover new series and manage your watchlist on MovieGO." />
+        <meta name="twitter:image" content="/backdrop.png" />
       </Helmet>
       <div className="min-h-screen">
         <div className="px-4 sm:px-6 md:px-8 pt-24 pb-12">
