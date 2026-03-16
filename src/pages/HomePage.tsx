@@ -335,7 +335,7 @@ const HomePage: React.FC = () => {
       <>
         <Helmet>
 		  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-		  <link rel="canonical" href="https://moviego.ws/" />
+		  <link rel="canonical" href="https://moviego.st/" />
           <title>MovieGO - Watch Free Movies & TV Shows Online </title>
           <meta
             name="description"
@@ -350,7 +350,7 @@ const HomePage: React.FC = () => {
             content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://moviego.ws/" />
+          <meta property="og:url" content="https://moviego.st/" />
           <meta property="og:image" content="/backdrop.png" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
@@ -384,7 +384,7 @@ const HomePage: React.FC = () => {
     <>
       <Helmet>
 	  	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-		<link rel="canonical" href="https://moviego.ws/" />
+		<link rel="canonical" href="https://moviego.st/" />
         <title>MovieGO - Watch Free Movies & TV Shows Online</title>
         <meta
           name="description"
@@ -399,7 +399,7 @@ const HomePage: React.FC = () => {
           content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moviego.ws/" />
+        <meta property="og:url" content="https://moviego.st/" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta

@@ -88,7 +88,7 @@ const MoviesPage: React.FC = () => {
         <meta property="og:title" content="Movies - MovieGO" />
         <meta property="og:description" content="Browse popular, trending, and top-rated movies. Discover new films and manage your watchlist on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moviego.ws/movies" />
+        <meta property="og:url" content="https://moviego.st/movies" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Movies - MovieGO" />
