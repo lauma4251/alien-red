@@ -747,7 +747,11 @@ const schemaData = {
 
             {/* Overview */}
             <div className="mt-6">
-              <h2 className="text-lg font-medium mb-2">Overview</h2>
+			<details>
+			<summary className="list-none [&::-webkit-details-marker]:hidden cursor-default"><h2 className="text-lg font-medium mb-2">Overview</h2></summary>
+			<h3 className="text-lg font-medium mb-2">Where to watch {getMediaTitle()} for free?</h3>
+			<p className="text-muted-foreground mb-4">You can watch {getMediaTitle()} {mediaType === 'movie' ? 'full movie' : 'full episodes'} online for free on MovieGO. We offer HD quality streaming with subtitles in English and other languages. No registration is required for instant access across all devices.</p>
+			</details>
               <p className="text-muted-foreground">{media.overview}</p>
             </div>
 
