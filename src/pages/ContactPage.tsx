@@ -51,28 +51,28 @@ const ContactPage: React.FC = () => {
                 <div className="flex items-center space-x-3">
                   <FaEnvelope className="h-5 w-5 text-primary" />
                   <a
-                    href="mailto:redjohn9818@proton.me"
+                    href="mailto:admin@moviego.st"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    redjohn9818@proton.me
+                    admin@moviego.st
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FaDiscord className="h-5 w-5 text-primary" />
                   <a
-                    href="https://discord.com/users/clueless1006"
+                    href="#"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    clueless1006
+                    moviego
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FaInstagram className="h-5 w-5 text-primary" />
                   <a
-                    href="https://www.instagram.com/ryangoslingoffical__/"
+                    href="#"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    @ryangoslingoffical__
+                    @moviego
                   </a>
                   <sup> *jk i'm pbviously not Ryan Gosling</sup>
                 </div>
