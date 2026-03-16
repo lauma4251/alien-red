@@ -60,7 +60,7 @@ const AboutPage: React.FC = () => {
               <h2 className="text-2xl font-semibold mb-4">Ads</h2>
               <p>
                 I have nothing to do with the ads, they're because of the api
-                providers. Use adblocker or something.
+                providers.
               </p>
             </section>
 
