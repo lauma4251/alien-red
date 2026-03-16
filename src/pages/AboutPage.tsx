@@ -101,58 +101,6 @@ const AboutPage: React.FC = () => {
                 <li>Continuous improvement of our platform</li> */}
               </ul>
             </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-4">Socials</h2>
-              <p></p>
-              {/* <ul className="list-disc pl-6 mt-4 space-y-2">
-                <li>
-                  Instagram:{" "}
-                  <a
-                    href="https://www.instagram.com/ryangoslingoffical__/"
-                    className="text-primary hover:underline"
-                  >
-                    @ryangoslingoffical__
-                  </a>
-                  <sup> *jk i'm pbviously not Ryan Gosling</sup>
-                </li>
-              </ul> */}
-                            <div className="space-y-4">
-                              <div className="flex items-center space-x-3">
-                                <FaEnvelope className="h-5 w-5 text-primary" />
-                                <a
-                                  href="mailto:redjohn9818@proton.me"
-                                  className="text-muted-foreground hover:text-primary transition-colors"
-                                >
-                                  redjohn9818@proton.me
-                                </a>
-                              </div>
-                              <div className="flex items-center space-x-3">
-                                <FaDiscord className="h-5 w-5 text-primary" />
-                                <a
-                                  href="https://discord.com/users/clueless1006"
-                                  className="text-muted-foreground hover:text-primary transition-colors"
-                                >
-                                  clueless1006
-                                </a>
-                              </div>
-                              <div className="flex items-center space-x-3">
-                                <FaInstagram className="h-5 w-5 text-primary" />
-                                <a
-                                  href="https://www.instagram.com/ryangoslingoffical__/"
-                                  className="text-muted-foreground hover:text-primary transition-colors"
-                                >
-                                  @ryangoslingoffical__
-                                </a>
-                                <sup> *jk i'm pbviously not Ryan Gosling</sup>
-                              </div>
-                            </div>
-            </section>
-
-            {/* <section>
-              <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-              <p>Have questions, suggestions, or feedback?</p>
-            </section> */}
           </div>
         </div>
       </div>
