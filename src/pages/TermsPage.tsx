@@ -15,7 +15,7 @@ const TermsPage: React.FC = () => {
         <meta property="og:title" content="Terms of Service - MovieGO" />
         <meta property="og:description" content="Read the terms of service for MovieGO. Understand the rules and guidelines for using this site." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moviego.st/terms" />
+        <meta property="og:url" content="https://moviego.ws/terms" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Terms of Service - MovieGO" />

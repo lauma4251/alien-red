@@ -88,7 +88,7 @@ const TVShowsPage: React.FC = () => {
         <meta property="og:title" content="TV Shows - MovieGO" />
         <meta property="og:description" content="Browse popular, trending, and top-rated TV shows. Discover new series and manage your watchlist on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moviego.st/tv" />
+        <meta property="og:url" content="https://moviego.ws/tv" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="TV Shows - MovieGO" />

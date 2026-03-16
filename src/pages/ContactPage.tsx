@@ -24,7 +24,7 @@ const ContactPage: React.FC = () => {
         <meta property="og:title" content="Contact - MovieGO" />
         <meta property="og:description" content="Contact the MovieGO team for questions, suggestions, or feedback. Get in touch with us here." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moviego.st/contact" />
+        <meta property="og:url" content="https://moviego.ws/contact" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact - MovieGO" />
@@ -51,10 +51,10 @@ const ContactPage: React.FC = () => {
                 <div className="flex items-center space-x-3">
                   <FaEnvelope className="h-5 w-5 text-primary" />
                   <a
-                    href="mailto:admin@moviego.st"
+                    href="mailto:admin@moviego.ws"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    admin@moviego.st
+                    admin@moviego.ws
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
