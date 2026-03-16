@@ -492,9 +492,12 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
       <div className="container pt-24 pb-12 text-center">
         <h1 className="text-2xl font-bold">Media not found</h1>
         <p className="mt-4">The requested media could not be found.</p>
-        <Button className="mt-6" onClick={() => navigate("/")}>
-          Back to Home
-        </Button>
+<Button 
+  className="mt-6" 
+  onClick={() => window.location.href = "/"}
+>
+  Back to Home
+</Button>
       </div>
     );
   }
