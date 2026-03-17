@@ -448,6 +448,16 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
         selectedEpisode?.episode_number || 1
       }`;
     }
+	
+    // CEK SERVER DISINI
+    if (["vidcore", "vidrock"].includes(selectedServer)) {
+      // Karena ini server 'clean' (gak ada ? sebelumnya), kita pakai ?
+      return `${finalUrl}?nextButton=false&autoNext=false`;
+    }
+
+    return finalUrl;
+	
+	
   };
 
   const getMediaTitle = () => {
