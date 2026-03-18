@@ -125,9 +125,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         )}
       >
         <div className="w-full max-w-3xl text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-2xl mb-4 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-2xl mb-4 sm:mb-6">
             {title}
-          </h1>
+          </h2>
 
           <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-sm sm:text-base text-white/90 mb-4 drop-shadow">
             {releaseYear && (
