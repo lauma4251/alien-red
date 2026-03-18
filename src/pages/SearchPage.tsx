@@ -77,7 +77,7 @@ const SearchPage: React.FC = () => {
         <meta property="og:title" content="Search - MovieGO" />
         <meta property="og:description" content="Search for movies, TV shows, and people. Find your favorite content quickly on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.moviego.ws/search" />
+        <meta property="og:url" content="https://moviego.ws/search" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Search - MovieGO" />

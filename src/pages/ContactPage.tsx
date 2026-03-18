@@ -24,7 +24,7 @@ const ContactPage: React.FC = () => {
         <meta property="og:title" content="Contact - MovieGO" />
         <meta property="og:description" content="Contact the MovieGO team for questions, suggestions, or feedback. Get in touch with us here." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.moviego.ws/contact" />
+        <meta property="og:url" content="https://moviego.ws/contact" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact - MovieGO" />
