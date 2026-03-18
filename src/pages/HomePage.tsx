@@ -36,6 +36,34 @@ const HomePage: React.FC = () => {
   const { session, loading: authLoading } = useAuth();
   const { toast } = useToast();
 
+  const HOME_SCHEMA = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://moviego.ws/#organization",
+        "name": "MovieGO",
+        "url": "https://moviego.ws/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://moviego.ws/poster.png",
+          "width": "512",
+          "height": "512"
+        },
+        "description": "MovieGO is a free streaming platform for watching movies and TV shows in HD quality."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://moviego.ws/#website",
+        "url": "https://moviego.ws/",
+        "name": "MovieGO",
+        "publisher": { "@id": "https://moviego.ws/#organization" },
+        "inLanguage": "en-US",
+        "description": "Watch Free Movies & TV Shows Online"
+      }
+    ]
+  };
+
 /**
   useEffect(() => {
     if (authLoading) return;
@@ -362,6 +390,9 @@ const HomePage: React.FC = () => {
             content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
           />
           <meta name="twitter:image" content="/backdrop.png" />
+		  <script type="application/ld+json">
+            {JSON.stringify(HOME_SCHEMA)}
+          </script>
         </Helmet>
         <div className="min-h-screen bg-background">
           <div className="space-y-8 px-4 sm:px-6 md:px-8 py-6 sm:py-8">
@@ -411,6 +442,9 @@ const HomePage: React.FC = () => {
           content="Stream trending movies and TV shows from multiple sources. Discover, watch, and manage your watchlist all in one place."
         />
         <meta name="twitter:image" content="/backdrop.png" />
+	    <script type="application/ld+json">
+          {JSON.stringify(HOME_SCHEMA)}
+        </script>
       </Helmet>
       <div className="min-h-screen">
         {isLoading ? (
