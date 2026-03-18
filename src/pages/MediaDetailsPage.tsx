@@ -154,11 +154,11 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
           setMedia({ ...tvData, media_type: "tv" });
 		  
 		  
-		  // --- TARO DISINI: Logic Auto-Switch Server buat Anime ---
-        if (currentMedia) {
-          const isAnimation = currentMedia.genres?.some((g: any) => g.id === 16);
-          const isJapan = currentMedia.origin_country?.includes("JP") || 
-                         currentMedia.production_countries?.some((c: any) => c.iso_3166_1 === "JP");
+// 2. --- Logic Auto-Switch Server buat Anime ---
+        if (fetchedData) {
+          const isAnimation = fetchedData.genres?.some((g: any) => g.id === 16);
+          const isJapan = fetchedData.origin_country?.includes("JP") || 
+                         fetchedData.production_countries?.some((c: any) => c.iso_3166_1 === "JP");
 
           if (isAnimation && isJapan) {
             setSelectedServer("videasy");
@@ -167,7 +167,6 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
             setSelectedServer(savedServer);
           }
         }
-        // -------------------------------------------------------
 
           // If TV show has seasons, select the appropriate one
           if (tvData.seasons && tvData.seasons.length > 0) {
