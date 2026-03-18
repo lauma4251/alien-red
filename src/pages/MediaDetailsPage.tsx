@@ -71,6 +71,18 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
   const [pingTimes, setPingTimes] = useState<Record<string, number | null>>({});
   const [optimalServer, setOptimalServer] = useState<string | null>(null);
   const [rankedServers, setRankedServers] = useState<string[]>([]);
+  
+  const isAnime = (media: any) => {
+    if (!media) return false;
+  
+    const genres = media.genres || [];
+    const countries = media.origin_country || []; // TMDB TV series pakai origin_country
+  
+    const isAnimation = genres.some((g: any) => g.id === 16 || g.name === "Animation");
+    const isFromJapan = countries.includes("JP");
+
+  return isAnimation && isFromJapan;
+  };
 
   const servers = [
     { id: "vidcore", name: "VidCore", url: "https://vidcore.net", streamUrl: "https://vidcore.net" },
@@ -140,6 +152,22 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
         } else if (mediaType === "tv") {
           const tvData = await api.getTvDetails(id);
           setMedia({ ...tvData, media_type: "tv" });
+		  
+		  
+		  // --- TARO DISINI: Logic Auto-Switch Server buat Anime ---
+        if (currentMedia) {
+          const isAnimation = currentMedia.genres?.some((g: any) => g.id === 16);
+          const isJapan = currentMedia.origin_country?.includes("JP") || 
+                         currentMedia.production_countries?.some((c: any) => c.iso_3166_1 === "JP");
+
+          if (isAnimation && isJapan) {
+            setSelectedServer("videasy");
+          } else {
+            const savedServer = localStorage.getItem("selectedServer") || "vidcore";
+            setSelectedServer(savedServer);
+          }
+        }
+        // -------------------------------------------------------
 
           // If TV show has seasons, select the appropriate one
           if (tvData.seasons && tvData.seasons.length > 0) {
