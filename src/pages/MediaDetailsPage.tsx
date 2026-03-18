@@ -74,9 +74,9 @@ const MediaDetailsPage: React.FC<MediaDetailsPageProps> = () => {
 
   const servers = [
     { id: "vidcore", name: "VidCore", url: "https://vidcore.net", streamUrl: "https://vidcore.net" },
-    { id: "vidrock", name: "Vidrock", url: "https://vidrock.net", streamUrl: "https://vidrock.net" },
-    { id: "videasy", name: "Videasy", url: "https://www.videasy.net", streamUrl: "https://player.videasy.net" },
-    { id: "moviego", name: "MovieGO", url: "https://moviego.watch", streamUrl: "https://moviego.watch/embed" },
+    { id: "vidking", name: "VidKing", url: "https://www.vidking.net", streamUrl: "https://www.vidking.net" },
+    { id: "videasy", name: "VidEasy", url: "https://www.videasy.net", streamUrl: "https://player.videasy.net" },
+    { id: "moviego", name: "VidSrc", url: "https://moviego.watch", streamUrl: "https://moviego.watch/embed" },
   ];
 
   useEffect(() => {
