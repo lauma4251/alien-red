@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Cigarette } from "lucide-react";
-import { FaDiscord, FaInstagram, FaEnvelope} from "react-icons/fa6";
+import { FaDiscord, FaTelegram, FaEnvelope} from "react-icons/fa6";
 import { Separator } from "@/components/ui/separator";
 
 const Footer: React.FC = () => {
@@ -32,18 +32,18 @@ const Footer: React.FC = () => {
                 <FaEnvelope className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://discord.gg/9BEdFb5MQY" target="_blank" rel="nofollow noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Discord"
               >
                 <FaDiscord className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://t.me/moviego_official" target="_blank" rel="nofollow noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
-                <FaInstagram className="h-5 w-5" />
+                <FaTelegram className="h-5 w-5" />
               </a>
             </div>
           </div>
