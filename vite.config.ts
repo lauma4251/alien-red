@@ -1,27 +1,9 @@
 import path from "path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import obfuscator from "rollup-plugin-obfuscator"; // <--- 1. Import bumbunya
 
 export default defineConfig({
-  plugins: [
-    react(),
-    // 2. Masukin pengacak kode di sini
-    obfuscator({
-      options: {
-        compact: true,
-        controlFlowFlattening: true, // Logic dibikin ribet kayak labirin
-        controlFlowFlatteningThreshold: 1,
-        numbersToExpressions: true, // Angka diubah jadi rumus matematika
-        simplify: true,
-        stringArray: true, // Teks & URL disembunyiin
-        stringArrayThreshold: 1,
-        splitStrings: true,
-        debugProtection: true, // Anti-Inspect Element (bikin lag)
-        selfDefending: true, // Dirapiin malah rusak
-      },
-    }),
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -32,12 +14,12 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
-    sourcemap: false, // Biar blueprint kode asli gak bocor
+    sourcemap: false,
     minify: "terser",
     terserOptions: {
       compress: {
-        drop_console: true, // Hapus console.log otomatis
-        drop_debugger: true, // Hapus debugger otomatis
+        drop_console: true,
+        drop_debugger: true,
       },
     },
     rollupOptions: {
