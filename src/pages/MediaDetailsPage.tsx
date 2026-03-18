@@ -519,7 +519,7 @@ const trailer = media.videos?.results?.find((v: any) => v.type === "Trailer" && 
 const schemaData = {
   "@context": "https://schema.org",
   "@type": mediaType === "movie" ? "Movie" : "TVSeries",
-  "url": `https://moviego.ws${location.pathname}`,
+  "url": `https://moviego.sh${location.pathname}`,
   "name": mediaType === "movie" ? media.title : media.name,
   "description": media.overview,
   "image": getBackdropUrl(media.backdrop_path, "w780"),
@@ -566,14 +566,14 @@ const schemaData = {
      <div className="pb-12">
 	  
 	<Helmet>
-        <link rel="canonical" href={`https://moviego.ws${location.pathname}`} />
+        <link rel="canonical" href={`https://moviego.sh${location.pathname}`} />
         <title>{helmetTitle}</title>
         <meta name="description" content={truncatedDesc} />
 
         <meta property="og:title" content={helmetTitle} />
         <meta property="og:description" content={media.overview} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://moviego.ws${location.pathname}`} />
+        <meta property="og:url" content={`https://moviego.sh${location.pathname}`} />
         <meta property="og:image" content={getBackdropUrl(media.backdrop_path, "w780") as string} />
 
         <meta name="twitter:card" content="summary_large_image" />

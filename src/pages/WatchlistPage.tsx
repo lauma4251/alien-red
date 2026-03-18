@@ -92,7 +92,7 @@ const WatchlistPage: React.FC = () => {
         <meta property="og:title" content="My Watchlist - MovieGO" />
         <meta property="og:description" content="View and manage your personal watchlist. Keep track of movies and TV shows you want to watch on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moviego.ws/watchlist" />
+        <meta property="og:url" content="https://moviego.sh/watchlist" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="My Watchlist - MovieGO" />
