@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
           content="Learn more about MovieGO, our mission, data sources, and commitment to providing a modern streaming experience."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moviego.ws/about" />
+        <meta property="og:url" content="https://www.moviego.ws/about" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About MovieGO - Streaming Platform" />

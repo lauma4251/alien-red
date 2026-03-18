@@ -182,7 +182,7 @@ const GenresPage: React.FC = () => {
         <meta property="og:title" content="Genres - MovieGO" />
         <meta property="og:description" content="Browse movies and TV shows by genre. Find your favorite genres and discover new content on MovieGO." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://moviego.ws/genres" />
+        <meta property="og:url" content="https://www.moviego.ws/genres" />
         <meta property="og:image" content="/backdrop.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Genres - MovieGO" />
