@@ -11,6 +11,7 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Helmet>
+	    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>About MovieGO - Streaming Platform</title>
         <meta
           name="description"

@@ -87,6 +87,7 @@ const WatchlistPage: React.FC = () => {
   return (
     <>
       <Helmet>
+	    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>My Watchlist - MovieGO</title>
         <meta name="description" content="View and manage your personal watchlist. Keep track of movies and TV shows you want to watch on MovieGO." />
         <meta property="og:title" content="My Watchlist - MovieGO" />

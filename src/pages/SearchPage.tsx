@@ -72,6 +72,7 @@ const SearchPage: React.FC = () => {
   return (
     <>
       <Helmet>
+	    <meta name='robots' content='noindex' />
         <title>Search - MovieGO</title>
         <meta name="description" content="Search for movies, TV shows, and people. Find your favorite content quickly on MovieGO." />
         <meta property="og:title" content="Search - MovieGO" />

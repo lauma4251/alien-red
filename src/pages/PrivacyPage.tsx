@@ -10,6 +10,7 @@ const PrivacyPage: React.FC = () => {
   return (
     <>
       <Helmet>
+	    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Privacy Policy - MovieGO</title>
         <meta name="description" content="Read the privacy policy for MovieGO. Learn how your data is handled and protected." />
         <meta property="og:title" content="Privacy Policy - MovieGO" />

@@ -19,6 +19,7 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Helmet>
+	    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Contact - MovieGO</title>
         <meta name="description" content="Contact the MovieGO team for questions, suggestions, or feedback. Get in touch with us here." />
         <meta property="og:title" content="Contact - MovieGO" />

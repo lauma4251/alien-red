@@ -10,6 +10,7 @@ const TermsPage: React.FC = () => {
   return (
     <>
       <Helmet>
+	    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Terms of Service - MovieGO</title>
         <meta name="description" content="Read the terms of service for MovieGO. Understand the rules and guidelines for using this site." />
         <meta property="og:title" content="Terms of Service - MovieGO" />

@@ -83,6 +83,7 @@ const MoviesPage: React.FC = () => {
   return (
     <>
       <Helmet>
+	    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Movies - MovieGO</title>
         <meta name="description" content="Browse popular, trending, and top-rated movies. Discover new films and manage your watchlist on MovieGO." />
         <meta property="og:title" content="Movies - MovieGO" />
