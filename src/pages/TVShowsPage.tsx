@@ -83,6 +83,7 @@ const TVShowsPage: React.FC = () => {
   return (
     <>
       <Helmet>
+	    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>TV Shows - MovieGO</title>
         <meta name="description" content="Browse popular, trending, and top-rated TV shows. Discover new series and manage your watchlist on MovieGO." />
         <meta property="og:title" content="TV Shows - MovieGO" />
