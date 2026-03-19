@@ -566,6 +566,7 @@ const schemaData = {
      <div className="pb-12">
 	  
 	<Helmet>
+	    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <link rel="canonical" href={`https://moviego.sh${location.pathname}`} />
         <title>{helmetTitle}</title>
         <meta name="description" content={truncatedDesc} />
